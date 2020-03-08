@@ -1,0 +1,35 @@
+/**index.wxss**/
+.appHeader {
+
+}
+.appBody {
+
+}
+.cameraPanel {
+  display: flex;
+  justify-content: center;
+}
+.pickPhotoButton {
+  margin-top: 20px;
+  background: #F1F1F1;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  vertical-align: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.buttonPanel {
+  display: flex;
+  justify-content: center;
+}
+.uploadBtnPanel {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.resultPanel {
+  display: block;
+  margin-top: 10px;
+}

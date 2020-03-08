@@ -1,0 +1,30 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="appHeader">
+    欢迎来到果果家的工具箱
+  </view>
+  <view class="appBody">
+    <view class="cameraPanel">
+      <view class="pickPhotoButton" bindtap="choosePhoto">
+        <text>+ 点击拍摄或选取照片</text>
+      </view>
+    </view>
+    <view class="buttonPanel" wx:if="{{photoSrc != ''}}">
+      <image style="width: 100%;" mode="aspectFit" src="{{photoSrc}}"></image>
+    </view>
+    <view class="uploadBtnPanel">
+      <button type="primary" size="default" loading="{{photoIsLoading}}" disabled="{{photoIsLoading}}" bindtap="primary" bindtap="submitPhoto">提交</button>
+    </view>
+    <view class="resultPanel">   
+        <view style="display:flex; justify-content: center;">
+          <text>{{photo.name}}</text>
+        </view>
+        <view style="display:flex; justify-content: center;">
+          <!-- <text>{{photo.desc}}</text> -->
+        </view>
+        <view style="display:flex; justify-content: center;">
+          <!-- <text>{{photo.src}}</text> -->
+        </view>
+    </view>
+  </view>
+</view>
